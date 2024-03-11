@@ -11,11 +11,21 @@ export default function App() {
     bold: require("./assets/fonts/Poppins-Bold.ttf"),
     medium: require("./assets/fonts/Poppins-Medium.ttf"),
     extrabold: require("./assets/fonts/Poppins-ExtraBold.ttf"),
-    regular: require("./assets/fonts/Poppins-Regular.ttf"),
+    semibold: require("./assets/fonts/Poppins-SemiBold.ttf"),
   });
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
   return (
     <View style={styles.container}>
-      <Text> Hi, start working on your app!</Text>
+      <Text style={styles.textStyle}> Hi, start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -27,5 +37,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  textStyle: {
+    fontFamily: "semibold",
+    fontSize: 20,
   },
 });
