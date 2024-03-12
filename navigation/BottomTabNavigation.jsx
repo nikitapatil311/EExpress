@@ -8,8 +8,8 @@ const BottomTabNavigation = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Search" component={Home} />
+      <Tab.Screen name="Profile" component={Home} />
     </Tab.Navigator>
   );
 };
