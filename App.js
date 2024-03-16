@@ -6,6 +6,8 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
 
+const Stack = createNativeStackNavigator();
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     regular: require("./assets/fonts/Poppins-Regular.ttf"),
@@ -25,6 +27,18 @@ export default function App() {
   if (!fontsLoaded) {
     return null;
   }
+
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Bottom Navigation"
+          component={BottomTabNavigation}
+          options={{ headershown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
   return (
     <View style={styles.container}>
       <Text style={styles.textStyle}> Hi, start working on your app!</Text>
