@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const Home = () => {
   return (
     <SafeAreaView>
-      <Text>Home</Text>
+      <view style={styles.appBarWrapper}></view>
     </SafeAreaView>
   );
 };
