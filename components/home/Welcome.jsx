@@ -29,7 +29,11 @@ const Welcome = () => {
           />
         </view>
       </view>
-      <view></view>
+      <view>
+        <TouchableOpacity>
+          <Ionicons />
+        </TouchableOpacity>
+      </view>
     </view>
   );
 };
