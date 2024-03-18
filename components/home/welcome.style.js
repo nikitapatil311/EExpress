@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.xxLarge - 6,
     marginTop: top,
     color: color,
-    marginHorizontal: 12,
+    marginHorizontal: 12
   }),
   searchContainer:{
     flexDirection:"row",
@@ -18,15 +18,27 @@ const styles = StyleSheet.create({
     alignContent: "center",
     backgroundColor:COLORS.secondary 
     borderRadius: SIZES.medium,
-    marginVertical: SIZES.medium, 
+    marginVertical: SIZES.medium,
+    height:50
   },
   searchIcon:{
     marginHorizontal: 10,
-    color: COLORS.gray,
+    color: COLORS.gray
+  },
     searchWrapper:{
         flex:1,
-        backgroundColor
+        backgroundColor: COLORS.secondary,
+        marginRight:SIZES.small,
+        borderRadius:SIZES.small
+
+    },
+    searchInput:{
+        fontFamily: "regular",
+        width: "100%",
+        height: "100%",
+        paddingHorizontal:SIZES.small
     }
+
   }
 });
 
