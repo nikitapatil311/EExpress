@@ -6,6 +6,7 @@ const Welcome = () => {
   return (
     <view style={styles.container}>
       <Text style={styles.welcomeTxt}>Find the most</Text>
+      <Text style={styles.welcomeTxt}> Luxurious Furniture </Text>
     </view>
   );
 };

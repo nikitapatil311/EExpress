@@ -5,10 +5,11 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
   },
-  welcomeTxt: {
+  welcomeTxt: () => ({
     fontFamily: "bold",
     fontSize: SIZES.xxLarge - 5,
-  },
+    marginTop: SIZES.xSmall,
+  }),
 });
 
 export default styles;
