@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { COLORS, SIZES } from "../constants/index";
 
 const styles = StyleSheet.create({
-  textstyle: {
+  textStyle: {
     fontFamily: "bold",
     fontsize: 40,
   },
@@ -10,5 +10,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 22,
     marginTop: SIZES.small,
   },
+  appBar:{
+    flexDirection: "row",
+    justifyContent "space-between",
+    alignItems: "center"
+  }
 });
 export default styles;
