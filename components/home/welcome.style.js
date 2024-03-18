@@ -37,7 +37,17 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "100%",
         paddingHorizontal:SIZES.small
-    }
+    },
+
+  searchBtn:{
+width:"50",
+height: "100%",
+borderRadius: SIZES.medium,
+alignItems: "center",
+backgroundColor: COLORS.primary,
+
+
+
 
   }
 });

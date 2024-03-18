@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./welcome.style";
 import { COLORS, SIZES } from "../../constants";
 import { TouchableOpacity } from "react-native-gesture-handler";
-import { Feather } from "expo/vector-icons";
+import { Feather, Ionicons } from "expo/vector-icons";
 
 const Welcome = () => {
   return (
@@ -30,8 +30,12 @@ const Welcome = () => {
         </view>
       </view>
       <view>
-        <TouchableOpacity>
-          <Ionicons />
+        <TouchableOpacity style={styles.searchBtn}>
+          <Ionicons
+            name="camera-outline"
+            size={SIZES.xLarge}
+            color={COLORS.ofwhite}
+          />
         </TouchableOpacity>
       </view>
     </view>
