@@ -23,7 +23,9 @@ const Home = () => {
           </View>
         </View>
       </View>
-      <ScrollView></ScrollView>
+      <ScrollView>
+        <welcome />
+      </ScrollView>
     </SafeAreaView>
   );
 };
