@@ -4,8 +4,10 @@ import styles from "./welcome.style";
 import { COLORS, SIZES } from "../../constants";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Feather, Ionicons } from "expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const Welcome = () => {
+  const navigation = useNavigation();
   return (
     <view>
       <view style={styles.container}>
@@ -24,7 +26,7 @@ const Welcome = () => {
           <TextInput
             style={styles.searchInput}
             value=""
-            onPressIn={() => {}}
+            onPressIn={() => NavigationPreloadManager.navigate("search")}
             placeholder="what are you looking for"
           />
         </view>
