@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.xxLarge - 6,
     marginTop: top,
     color: color,
-    marginHorizontal: 12,
+    marginHorizontal: SIZES.small,
   }),
   searchContainer: {
     flexDirection: "row",
