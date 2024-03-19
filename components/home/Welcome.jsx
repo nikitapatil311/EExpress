@@ -28,16 +28,19 @@ const Welcome = () => {
             placeholder="what are you looking for"
           />
         </view>
-      </view>
-      <view>
-        <TouchableOpacity style={styles.searchBtn}>
-          <Ionicons
-            name="camera-outline"
-            size={SIZES.xLarge}
-            color={COLORS.ofwhite}
-          />
-        </TouchableOpacity>
+
+        <view>
+          <TouchableOpacity style={styles.searchBtn}>
+            <Ionicons
+              name="camera-outline"
+              size={SIZES.xLarge}
+              color={COLORS.ofwhite}
+            />
+          </TouchableOpacity>
+        </view>
       </view>
     </view>
   );
 };
+
+export default Welcome;
